@@ -10,11 +10,10 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background: #0b1a2a;
-      color: #f1f1f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      color: white;
       overflow-x: hidden;
-      line-height: 1.6;
     }
     header, section, footer {
       text-align: center;
@@ -25,38 +24,20 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      color: #ffffff;
     }
     h2 {
       font-size: 2rem;
       margin-top: 2rem;
-      color: #aad6ff;
     }
     ul {
       list-style: none;
       padding: 0;
       font-size: 1.2rem;
     }
-    li {
-      margin-bottom: 0.5rem;
-    }
     form input, form button {
       padding: 0.6rem;
       font-size: 1rem;
       margin-top: 1rem;
-      border: none;
-      border-radius: 5px;
-    }
-    form input {
-      width: 250px;
-    }
-    form button {
-      background-color: #0066cc;
-      color: white;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #004d99;
     }
     #stars {
       position: fixed;
@@ -68,10 +49,9 @@
     }
     .star {
       position: absolute;
-      width: 4px;
-      height: 4px;
+      width: 2px;
+      height: 2px;
       background: white;
-      border-radius: 50%;
       animation: twinkle 2s infinite ease-in-out;
     }
     @keyframes twinkle {
@@ -91,7 +71,7 @@
     <h2>What We Do</h2>
     <ul>
       <li>Grooming detection using advanced NLP and LLMs</li>
-      <li>Image-based age detection to block risky content</li>
+      <li>Image-based age detection to block CSAM</li>
       <li>Real-time content moderation APIs for apps and platforms</li>
       <li>Direct implementation options for NGOs and organisations</li>
     </ul>
@@ -104,12 +84,12 @@
 
   <section>
     <h2>Why It Matters</h2>
-    <p>Millions of children are exposed to online threats every day. ConstellAI provides smart, embeddable AI tools to prevent harm before it happens — helping platforms ensure trust, safety, and compliance.</p>
+    <p>Millions of children are exposed to online threats every day. ConstellAI provides smart, embeddable AI tools to prevent harm before it happens — helping platforms ensure trust, safety, and compliance at the root level.</p>
   </section>
 
   <section>
     <h2>Get Involved</h2>
-    <p>Join our waitlist or request early access.</p>
+    <p>We are currently approaching beta testing. Join our waitlist or request early access. You may be eligible for a free trial.</p>
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="email" name="email" placeholder="Your email address" required />
       <button type="submit">Notify Me</button>
