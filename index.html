@@ -1,34 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConstellAI</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background: #0e0e2c;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            flex-direction: column;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConstellAI Technologies</title>
+  <meta name="description" content="AI-powered child safety and content moderation solutions for developers and organizations." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      color: white;
+      overflow-x: hidden;
+    }
+    header, section, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+    form input, form button {
+      padding: 0.6rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    #stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.1; }
+      50% { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <h1>ConstellAI</h1>
-    <p>We build AI safety tools to help platforms protect children from online exploitation and grooming.</p>
+  <div id="stars"></div>
+  <header>
+    <h1>ConstellAI Technologies</h1>
+    <p>AI-powered child safety and content moderation for the digital world</p>
+  </header>
+
+  <section>
+    <h2>What We Do</h2>
+    <ul>
+      <li>Grooming detection using advanced NLP and LLMs</li>
+      <li>Image-based age detection to block CSAM</li>
+      <li>Real-time content moderation APIs for apps and platforms</li>
+      <li>Direct implementation options for NGOs and organisations</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who It's For</h2>
+    <p>Developers • NGOs • Messaging apps • EdTech platforms • Safety-conscious startups</p>
+  </section>
+
+  <section>
+    <h2>Why It Matters</h2>
+    <p>Millions of children are exposed to online threats every day. ConstellAI provides smart, embeddable AI tools to prevent harm before it happens — helping platforms ensure trust, safety, and compliance at the root level.</p>
+  </section>
+
+  <section>
+    <h2>Get Involved</h2>
+    <p>We are currently approaching beta testing. Join our waitlist or request early access. You may be eligible for a free trial.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="email" name="email" placeholder="Your email address" required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ConstellAI Technologies Inc.</p>
+  </footer>
+
+  <script>
+    // Star field animation
+    const stars = document.getElementById('stars');
+    for (let i = 0; i < 150; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDuration = 1 + Math.random() * 3 + 's';
+      stars.appendChild(star);
+    }
+  </script>
 </body>
 </html>
