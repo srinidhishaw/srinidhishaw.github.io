@@ -32,7 +32,6 @@
     ul {
       list-style:none;
       padding: none;
-      font-size: 1.2rem;
     }
     li {
       padding: 0.5rem;
@@ -68,6 +67,17 @@
       padding: 1rem;
       text-align: left;
     }
+    .centered-list {
+    display: flex;
+    justify-content: center;
+    }
+
+    .centered-list ul {
+    text-align: left;
+    list-style: disc;
+    padding-left: 2rem;
+    max-width: 600px;
+    }
   </style>
 </head>
 <body>
@@ -77,30 +87,32 @@
     <p>AI-powered child safety and content moderation for the digital world</p>
   </header>
 
-  <section>
+  <section class="container">
     <h2>What We Do:</h2>
     <h3>We offer a constellation of endpoints in our AI-powered API:</h3>
+    <div class="centered-list">
     <ul>
       <li>Grooming detection using advanced NLP and LLMs</li>
       <li>Image-based age detection to block CSAM</li>
       <li>Real-time content moderation APIs for apps and platforms</li>
       <li>Direct implementation options for NGOs and organisations</li>
     </ul>
+    </div>
   </section>
 
-  <section id="container">
+  <section class="container">
     <h2>Who It's For</h2>
     <p>Developers • NGOs • Messaging apps • EdTech platforms • Safety-conscious startups</p>
   </section>
 
-  <div id="container">
+  <div class="container">
     <section>
         <h2>Why It Matters</h2>
         <p>Millions of children are exposed to online threats and attempts at human trafficking every day. ConstellAI provides AI tools to prevent harm before it happens, helping platforms ensure trust, safety, and compliance at the root level.</p>
     </section>
   </div>
 
-  <section id="container">
+  <section class="container">
     <h2>Get Involved</h2>
     <p>We are currently approaching beta testing. Join our waitlist for early access. You may be eligible for a free trial.</p>
     <form action="https://formspree.io/f/myzjqzrb" method="POST">
