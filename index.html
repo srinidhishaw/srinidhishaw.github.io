@@ -30,12 +30,16 @@
       margin-top: 1.5rem;
     }
     ul {
-      list-style:none;
-      padding: none;
+        list-style: none;
+        padding-left: 0;
+        margin: 0 auto;
+        max-width: 600px;
     }
+
     li {
-      padding: 0.5rem;
-      font-size: 1rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        text-align: center;
     }
     form input, form button {
       padding: 0.6rem;
@@ -66,16 +70,6 @@
       margin: 0 auto;
       text-align: center;
     }
-    .centered-list {
-    display: flex;
-    justify-content: center;
-    }
-    .centered-list ul {
-        margin: 0 auto;
-        text-align: center;
-        list-style:none;
-        max-width: 600px;
-    }
   </style>
 </head>
 <body>
@@ -88,7 +82,7 @@
   <section class="container">
     <h2>What We Do:</h2>
     <h3>We offer a constellation of endpoints in our AI-powered API:</h3>
-    <div class="centered-list">
+    <div>
     <ul>
       <li>Grooming detection using advanced NLP and LLMs</li>
       <li>Image-based age detection to block CSAM</li>
